@@ -1,0 +1,140 @@
+*::after,
+*::before,
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: hsl(30, 38%, 92%);
+	font-size: 1.3rem;
+}
+.attribution{
+	font-size: 1.5rem;
+	margin-top: 3em;
+}
+.card-desktop {
+	display: none;
+}
+
+.card {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.img {
+	width: 100%;
+    height: auto;
+	padding: 0 1em;
+	border-top-left-radius: 8%;
+	border-top-right-radius: 8%;
+    overflow: hidden;
+}
+.text {
+	padding: 0 3em;
+}
+.perfume {
+	padding: 1.5em 0 1em;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: hsla(212, 21%, 14%, 0.719);
+}
+.title {
+	font-family: 'Fraunces', serif;
+	font-size: 2.5em;
+}
+.description {
+	padding: 0.5em 0;
+	line-height: 2em;
+	font-size: 1.6rem;
+	color: hsl(228, 12%, 48%);
+}
+.price {
+	display: inline-block;
+	padding: 0.5em 0;
+}
+.one {
+	font-family: 'Fraunces', serif;
+	font-size: 3.5rem;
+	color: hsl(158, 36%, 37%);
+}
+.two {
+	text-decoration: line-through;
+	margin-left: 2em;
+	vertical-align: super;
+	color: hsl(228, 12%, 48%);
+}
+.btn {
+	width: 90%;
+	height: 3em;
+	padding: 1em;
+	background-color: hsl(158, 36%, 37%);
+	border-radius: 10px;
+	border: transparent;
+	font-size: 1.8rem;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.icon-cart {
+	margin: 0 0.5em;
+}
+
+
+
+@media (min-width: 768px) {
+
+	.attribution{
+		font-size: 2rem;
+		text-align: center;
+		margin-top: 4em;
+	}
+	.card {
+		display: none;
+	}
+	.card-desktop {
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+        display: flex;
+	}
+	.text {
+        padding: 0 0 0 2em;
+        margin-top: 2em;
+		width: 60%;
+	}
+	.img {
+        height: 100%;
+        min-width: 420px;
+		border-top-left-radius: 2em;
+		border-top-right-radius: 0;
+		border-bottom-left-radius:2em;
+        overflow: hidden;
+	}
+	.btn {
+        margin-top: 2em;
+		width: 100%;
+		display: block;
+        height: 3.5em;
+	}
+    .perfume{
+        font-size: 1.4rem;
+    }
+    .title{
+        font-size: 3.5rem;
+    }
+    .description{
+    font-size: 1.6rem;
+    }
+}
